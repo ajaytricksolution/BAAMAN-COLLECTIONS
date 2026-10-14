@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baaman Collections - Soft Toys for Babies</title>
+    <style>
+        :root {
+            --primary-red: #d32f2f;
+            --dark-red: #b71c1c;
+            --light-bg: #ffebee;
+            --text-dark: #333333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--primary-red);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--light-bg);
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1558060370-d7ebeee4ad8c?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: var(--primary-red);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: var(--dark-red);
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .section-title {
+            text-align: center;
+            color: var(--primary-red);
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            text-align: center;
+            border-top: 4px solid var(--primary-red);
+        }
+        .card h3 {
+            margin-top: 10px;
+            color: var(--dark-red);
+        }
+        .contact-box {
+            background-color: var(--light-bg);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BAAMAN COLLECTIONS</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Soft Toys Premium for Babies</h2>
+        <p>Dealing in all types of soft toys for B2B & B2C customers.</p>
+        <a href="#products" class="btn">Explore Products</a>
+    </section>
+
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">About Us</h2>
+            <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: auto;">
+                Welcome to <strong>Baaman Collections</strong>. We specialize in offering a wide range of premium quality soft toys specially designed for babies[cite: 1]. We serve both retail (B2C) and wholesale/bulk (B2B) customers with the best market prices and superior quality[cite: 1].
+            </p>
+        </section>
+
+        <section id="products" style="margin-top: 60px;">
+            <h2 class="section-title">Our Products</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Cute Teddy Bears</h3>
+                    <p>Soft, huggable, and safe non-toxic material specially made for kids and babies.</p>
+                </div>
+                <div class="card">
+                    <h3>Musical Plush Toys</h3>
+                    <p>Interactive and engaging plush toys with soothing music for infants.</p>
+                </div>
+                <div class="card">
+                    <h3>Animal Soft Toys</h3>
+                    <p>Wide variety of cute animal soft toys available for both B2B bulk orders and single pieces[cite: 1].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-box">
+            <h2 class="section-title" style="margin-bottom: 10px;">Contact Us</h2>
+            <p>For orders, inquiries, or business partnerships, reach out to us:</p>
+            <p style="font-size: 1.25rem; font-weight: bold; color: var(--primary-red);">?? Phone / WhatsApp: +91 9453181967[cite: 1]</p>
+            <p>?? Website: www.baamanworld.com[cite: 1]</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Baaman Collections. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
