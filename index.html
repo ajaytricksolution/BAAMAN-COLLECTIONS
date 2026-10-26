@@ -3,35 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bammanworld Kids | Meesho Price Store</title>
+    <title>Bammanworld Kids | India's Cheapest Kids Store</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
-        body { font-family: 'Nunito', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+        body { font-family: 'Nunito', sans-serif; background-color: #f3f4f6; }
         .hero-bg {
-            background: linear-gradient(rgba(255, 182, 193, 0.8), rgba(173, 216, 230, 0.8)), url('https://images.unsplash.com/photo-1519241047957-be31d7379a5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(to right, rgba(2ec4b6, 0.9), rgba(231, 29, 54, 0.8)), url('https://images.unsplash.com/photo-1519241047957-be31d7379a5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
         }
         .discount-badge {
-            clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 15% 50%, 0% 0%);
+            clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 12% 50%, 0% 0%);
+        }
+        .offer-blink {
+            animation: blinker 1.5s linear infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
         }
     </style>
 </head>
-<body class="bg-gray-50">
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-red-500 text-white text-center py-2 text-sm sm:text-base font-bold offer-blink z-50 relative">
+        🎉 MEGA SALE LIVE: FREE DELIVERY & CASH ON DELIVERY AVAILABLE! 🎉
+    </div>
 
     <!-- Top Navbar -->
-    <nav class="bg-white shadow-sm fixed w-full z-50 top-0 border-b-4 border-pink-400">
+    <nav class="bg-white shadow-md sticky top-0 w-full z-40 border-b-4 border-yellow-400">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0 flex items-center gap-2">
-                    <i class="fas fa-child text-pink-500 text-3xl"></i>
-                    <span class="font-extrabold text-2xl tracking-tight text-gray-800">BAMMAN<span class="text-pink-500">WORLD</span></span>
+                    <i class="fas fa-gift text-red-500 text-3xl"></i>
+                    <span class="font-extrabold text-2xl tracking-tight text-gray-900">BAMMAN<span class="text-red-500">WORLD</span></span>
                 </div>
-                <div class="flex items-center gap-4">
-                    <a href="https://wa.me/919453181967" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2 rounded-full font-bold transition duration-300 shadow-sm flex items-center gap-2 animate-bounce">
-                        <i class="fab fa-whatsapp text-xl"></i> <span class="hidden sm:inline">Order Now</span>
+                <div class="flex items-center gap-2 sm:gap-4">
+                    <span class="hidden sm:inline font-bold text-gray-600 mr-2">Sale Ends Soon!</span>
+                    <a href="#products" class="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 sm:px-6 rounded-full font-bold transition duration-300 shadow-md">
+                        Shop Now
                     </a>
                 </div>
             </div>
@@ -39,39 +51,58 @@
     </nav>
 
     <!-- Hero Banner Section -->
-    <div class="hero-bg h-[50vh] flex items-center justify-center text-center mt-16 rounded-b-[3rem] shadow-lg">
-        <div class="px-4">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4 drop-shadow-md">Kids Special Sale!</h1>
-            <p class="text-xl md:text-2xl text-gray-800 mb-8 max-w-2xl mx-auto font-bold bg-white/50 px-4 py-2 rounded-full">Factory Prices • Direct WhatsApp Booking</p>
-            <a href="#products" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full font-bold text-xl transition duration-300 shadow-xl border-4 border-white">Shop Now 👇</a>
+    <div class="hero-bg py-16 sm:py-24 text-center shadow-2xl relative overflow-hidden">
+        <div class="px-4 relative z-10">
+            <span class="bg-yellow-400 text-black font-extrabold px-4 py-1 rounded-full text-sm sm:text-base mb-4 inline-block uppercase tracking-wider shadow-lg">Biggest Kids Clearance Sale</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg mt-4">Sabse Sasta, Sabse Accha!</h1>
+            <p class="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto font-bold drop-shadow-md">Factory Prices Direct to You • Up to 70% OFF</p>
+            <div class="flex justify-center gap-4">
+                <a href="#products" class="bg-white text-red-600 px-8 py-3 rounded-full font-extrabold text-lg sm:text-xl transition duration-300 shadow-xl hover:scale-105 transform border-2 border-red-500">View Offers 👇</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trust Badges Section -->
+    <div class="bg-white py-6 shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-3 gap-2 text-center divide-x divide-gray-200">
+                <div class="px-2">
+                    <i class="fas fa-truck text-green-500 text-2xl sm:text-3xl mb-2"></i>
+                    <h3 class="font-bold text-xs sm:text-sm text-gray-800">Free Delivery</h3>
+                </div>
+                <div class="px-2">
+                    <i class="fas fa-hand-holding-usd text-blue-500 text-2xl sm:text-3xl mb-2"></i>
+                    <h3 class="font-bold text-xs sm:text-sm text-gray-800">COD Available</h3>
+                </div>
+                <div class="px-2">
+                    <i class="fas fa-medal text-yellow-500 text-2xl sm:text-3xl mb-2"></i>
+                    <h3 class="font-bold text-xs sm:text-sm text-gray-800">Premium Quality</h3>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Products Section -->
-    <div id="products" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">🔥 Today's Mega Offers 🔥</h2>
-            <p class="text-gray-500 mt-2 font-semibold">Sabse Sasta, Sabse Accha</p>
+    <div id="products" class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-12">
+        <div class="flex justify-between items-center mb-8 px-2">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-gray-800">🔥 Blockbuster Deals 🔥</h2>
+            <span class="bg-red-100 text-red-600 font-bold px-3 py-1 rounded-lg text-sm">Ends Tonight!</span>
         </div>
 
-        <!-- Product Cards (Auto generated by JavaScript) -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8" id="product-list">
+        <!-- Product Cards Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6" id="product-list">
+            <!-- Products will be generated here -->
         </div>
     </div>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919453181967?text=Hello Bammanworld! Main aapki website se kuch order karna chahta hu." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 hover:scale-110 transition duration-300 z-50 flex items-center justify-center animate-bounce">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-12 pb-8 rounded-t-[3rem]">
+    <footer class="bg-gray-900 text-white pt-12 pb-8 mt-8 border-t-8 border-red-500">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
-                <h3 class="text-2xl font-extrabold mb-4">BAMMAN<span class="text-pink-500">WORLD</span></h3>
-                <p class="text-gray-400 font-semibold">Best quality kids wear and toys at unmatchable wholesale prices.</p>
-            </div>
-            <div>
-                <h4 class="text-xl font-bold mb-4 text-pink-400">Contact Us</h4>
-                <p class="text-gray-300 mb-2"><i class="fas fa-phone mr-2"></i> +91 9453181967</p>
-                <p class="text-gray-300 mb-2"><i class="fas fa-envelope mr-2"></i> ashishpandey11dec@gmail.com</p>
-            </div>
-            <div>
-                <h4 class="text-xl font-bold mb-4 text-pink-400">Guarantees</h4>
-                <p class="text-gray-300 mb-2"><i class="fas fa-truck mr-2 text-green-400"></i> Fast Delivery</p>
-                <p class="text-gray-300"><i class="fas fa-shield-alt mr-2 text-green-4
+                <h3 class="text-2xl font-extrabold mb-4">BAMMAN<span class="text-red-500">WORLD</span></h3>
+                <p class="text-gray-400 font-
